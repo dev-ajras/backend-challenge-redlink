@@ -28,7 +28,7 @@ PASOS PARA INSTALAR EL PROYECTO:
 
 2 - Crear un entorno virtual y activarlo en la raiz del proyecto clonado:
 mac -> python3 -m virtualenv venv, luego : source venv/bin/activate  
-win -> python -m virtualenv venv, luego : venv\Scripts\activate
+win -> python -m venv venv, luego : venv\Scripts\activate
 
 3 - Debemos completar las variables de entorno, renombraremos .env.example a .env y setearemos un valor para las variables correspondientes.
 
