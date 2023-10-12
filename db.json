@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": "107ac4c7-33e2-4749-81e7-893837547d73",
+      "username": "julian",
+      "mail": "dev.ajras@gmail.com",
+      "password": "$2b$12$sAgKIZcxgynHFqj0EWUJ1exCP4c52RBKolmZXC1zJ5SwQGjzZ26PG"
+    },
+    {
+      "id": "7363b503-3112-4843-95b6-c7609d9eb7c9",
+      "username": "julian2",
+      "mail": "dev.ajras2@gmail.com",
+      "password": "$2b$12$G.YZmDJuKm0frH.uZYqde.bgjls5M9WywBCsOCnzU/TBpau6ONlnS"
+    }
+  ]
+}
