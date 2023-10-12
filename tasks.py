@@ -9,11 +9,13 @@ def init(c):
     is_windows = os.name == 'nt'
 
     if is_windows:
-        c.run('venv\Scripts\activate')
+        c.run(r'venv\Scripts\activate')
+        c.run('set FLASK_APP=index.py') 
     else:
         c.run('source venv/bin/activate')
+        c.run('export FLASK_APP=index.py') 
 
-    c.run('export FLASK_APP=index.py')    
+       
 
     c.run('pip install -r requirements.txt')
 
