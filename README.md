@@ -9,14 +9,18 @@ Contamos con endpoints publicos y privados:
 PUBLICOS:
 
 - <span style="color:blue">POST</span> /register : Creacion de usuario regular, require mail, username y password.
+  Se le debe enviar los datos por body y en formato json.
 
-- <span style="color:blue">POST</span> /login : Login de usuario, retorna token JWT de autenticacion, requiere username y password.
+- <span style="color:blue">POST</span> /login : Login de usuario, retorna token JWT de autenticacion, requiere username y password. **Este endpoint retornara el token con el cual podremos validarnos en los endpoints privados**.
+  Se le debe enviar los datos por body y en formato json.
 
 PRIVADOS:
 
 - <span style="color:green">GET</span> /users : Retorna los username de todos los usuarios almacenados en el archivo json.
+  Enviar en los Headers: Authorization: Bearer + token
 
-- <span style="color:green">GET</span> /puedopasar?user=<xxxx> : Valida si el token es valida y si corresponde al username pasado por query params.
+- <span style="color:green">GET</span> /puedopasar?user=<xxxx> : Valida nuestro token y si corresponde el username pasado por query params con nuestra sesion validada.
+  Enviar en los Headers: Authorization: Bearer + token
 
 # requisitos para iniciar el proyecto de manera local:
 
